@@ -1,0 +1,26 @@
+{
+  "evaluation": "stratified 80/20 holdout; seed 42; successful class positive",
+  "rows": 331675,
+  "majority_baseline_accuracy": 0.5961257254842843,
+  "results": {
+    "logistic_regression": {
+      "accuracy": 0.647064144116982,
+      "precision": 0.5944963364841435,
+      "recall": 0.3967377104251428,
+      "f1": 0.4758898589657488
+    },
+    "random_forest": {
+      "accuracy": 0.653862968267129,
+      "precision": 0.6297953097465094,
+      "recall": 0.34683289164271586,
+      "f1": 0.4473221807678421
+    },
+    "gradient_boosting": {
+      "accuracy": 0.6621391422326072,
+      "precision": 0.6166178428761652,
+      "recall": 0.43212272778171773,
+      "f1": 0.508142035728394
+    }
+  },
+  "limitations": "Single random holdout, not temporal validation. Original historical metrics are not comparable because outcome filtering and features differ."
+}
